@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("npm", (req, res, next) => {
+app.get("hamilton", (req, res, next) => {
     return res.status(200).sendFile("hamilton.html", { root: './' });
 });
 
