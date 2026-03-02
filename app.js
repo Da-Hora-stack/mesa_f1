@@ -5,6 +5,10 @@ app.get("/leclerc", (req, res, next) => {
     return res.status(200).sendFile("leclerc.html", { root: './' });
 });
 
+app.get("/verstape", (req, res, next) => {
+    return res.status(200).sendFile("verstape.html", { root: './' });
+});
+
 app.use((req, res, next)=> {
     const error = new Error("Not found...");
     error.status = 404;
